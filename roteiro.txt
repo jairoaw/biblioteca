@@ -1,0 +1,8 @@
+yarn create react-app crud
+yarn add @material-ui/core @material-ui/icons react-router-dom
+
+
+
+npm install @mui/material @emotion/react @emotion/styled
+
+
