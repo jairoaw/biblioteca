@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# Roteiro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+yarn create react-app crud
+yarn add @material-ui/core @material-ui/icons react-router-dom
+
+
+
+npm install @mui/material @emotion/react @emotion/styled
+
+
 
 ## Available Scripts
 
