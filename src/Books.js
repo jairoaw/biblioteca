@@ -12,7 +12,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Avatar from '@material-ui/core/Avatar';
+//import Avatar from '@material-ui/core/Avatar';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { Link } from "react-router-dom";
 
@@ -52,6 +52,7 @@ export default function BookList() {
         }
       )
   }
+  
 
   const UpdateBook = id => {
     window.location = '/update/'+id
@@ -103,7 +104,6 @@ export default function BookList() {
             <TableHead>
               <TableRow>
                 <TableCell align="right">ID</TableCell>
-                <TableCell align="center">Capa</TableCell>
                 <TableCell align="left">Título</TableCell>
                 <TableCell align="left">Páginas</TableCell>
                 <TableCell align="center">Ações</TableCell>
@@ -113,11 +113,6 @@ export default function BookList() {
               {books.map((book) => (
                 <TableRow key={book.ID}>
                   <TableCell align="right">{book.id}</TableCell>
-                  <TableCell align="center">
-                    <Box display="flex" justifyContent="center">
-                      <Avatar src={book.avatar} />
-                    </Box>
-                  </TableCell>
                   <TableCell align="left">{book.title}</TableCell>
                   <TableCell align="left">{book.pageCount}</TableCell>
                   <TableCell align="center">

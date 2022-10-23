@@ -30,9 +30,9 @@ const useStyles = makeStyles((theme) => ({
 export default function BookUpdate() {
   const classes = useStyles();
 
-  const { id } = useParams();
+  const {id} = useParams();
   useEffect(() => {
-    fetch("https://fakerestapi.azurewebsites.net/api/v1/Books"+id)
+    fetch("https://fakerestapi.azurewebsites.net/api/v1/Books/"+id)
       .then(res => res.json())
       .then(
         (result) => {
