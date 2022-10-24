@@ -64,14 +64,7 @@ export default function BookUpdate() {
       body: JSON.stringify(data),
     })
     .then(res => res.json())
-    .then(
-      (result) => {
-        alert(result['message'])
-        if (result['status'] === 'ok') {
-          window.location.href = '/';
-        }
-      }
-    )
+    
   }
 
   const [title, setTitle] = useState('');

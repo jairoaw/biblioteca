@@ -71,14 +71,6 @@ export default function BookList() {
       body: JSON.stringify(data),
     })
     .then(res => res.json())
-    .then(
-      (result) => {
-        alert(result['message'])
-        if (result['status'] === 'ok') {
-          BooksGet();
-        }
-      }
-    )
   }
 
   return (
