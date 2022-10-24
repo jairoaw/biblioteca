@@ -49,8 +49,7 @@ export default function BookCreate() {
     .then(res => res.json())
     .then(
       (result) => {
-        alert(result['message'])
-        if (result['status'] === 'ok') {
+        {
           window.location.href = '/';
         }
       }

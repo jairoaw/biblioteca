@@ -15,6 +15,7 @@ import TableRow from '@material-ui/core/TableRow';
 //import Avatar from '@material-ui/core/Avatar';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { Link } from "react-router-dom";
+import BookInfo from "./BookInfo";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +38,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BookList() {
   const classes = useStyles();
-
   const [books, setBooks] = useState([]);
   useEffect(() => {
     BooksGet()
@@ -53,9 +53,13 @@ export default function BookList() {
       )
   }
   
-
   const UpdateBook = id => {
     window.location = '/update/'+id
+  }
+
+  const BookInfo = id => {
+    window.location = '/info/'+id
+    
   }
 
   const BookDelete = id => {
@@ -111,7 +115,7 @@ export default function BookList() {
                     <ButtonGroup color="primary" aria-label="outlined primary button group">
                       <Button onClick={() => UpdateBook(book.id)}>Editar</Button>
                       <Button onClick={() => BookDelete(book.id)}>Apagar</Button>
-                      <Button onClick={() => BookDelete(book.id)}>+Infos</Button>
+                      <Button onClick={() => BookInfo(book.id)}>+Infos</Button>
                     </ButtonGroup>
                   </TableCell>
                 </TableRow>
