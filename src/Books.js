@@ -15,7 +15,7 @@ import TableRow from '@material-ui/core/TableRow';
 //import Avatar from '@material-ui/core/Avatar';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { Link } from "react-router-dom";
-import BookInfo from "./BookInfo";
+import BookInfo from "./components/BookInfo";
 
 const useStyles = makeStyles((theme) => ({
   root: {

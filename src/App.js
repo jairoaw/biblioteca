@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from './Navbar'
 import Books from './Books'
-import BookCreate from './BookCreate'
-import BookUpdate from './BookUpdate'
-import BookInfo from "./BookInfo";
+import BookCreate from './components/BookCreate'
+import BookUpdate from './components/BookUpdate'
+import BookInfo from "./components/BookInfo";
 
 export default function App() {
   return (

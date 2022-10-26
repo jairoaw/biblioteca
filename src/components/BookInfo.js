@@ -14,7 +14,7 @@ import TableRow from '@material-ui/core/TableRow';
 //import Avatar from '@material-ui/core/Avatar';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import { Link } from "react-router-dom";
-import { useFindBooksReducer } from "./useFindBooksReducer";
+import { useFindBooksReducer } from "../useFindBooksReducer";
 
 const useStyles = makeStyles((theme) => ({
   root: {

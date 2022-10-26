@@ -1,12 +1,7 @@
 # Roteiro
 
-yarn create react-app crud
+yarn create react-app biblioteca
 yarn add @material-ui/core @material-ui/icons react-router-dom
-
-
-
-npm install @mui/material @emotion/react @emotion/styled
-
 
 
 ## Available Scripts
